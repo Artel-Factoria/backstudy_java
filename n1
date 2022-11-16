@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class n1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double resOfCalc = scan.nextInt();
+        double resOfCalc1 = scan.nextInt();
+        System.out.println("Число №1: ");
+        double numb1 = scan.nextDouble();
+
+        for (String Action = ""; Action != "=";) {
+
+            System.out.println("Action");
+            String action = scan.nextDouble();
+
+            System.out.println("Число №2: ");
+            double numb2 = scan.nextDouble();
+
+            switch (action) {
+                case '+':
+                    numb1 = numb1 + numb2;
+                    System.out.println(numb1);
+                    break;
+                case '-':
+                    numb1 = numb1 - numb2;
+                    System.out.println(numb1);
+                    break;
+                case '*':
+                    numb1 = numb1 * numb2;
+                    System.out.println(numb1);
+                    break;
+                case '/':
+                    numb1 = numb1 / numb2;
+                    System.out.println(numb1);
+                    break;
+                default:
+                    System.out.println("Сообщение");
+            }
+        }
+    }
+}
